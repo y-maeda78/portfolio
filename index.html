@@ -12,7 +12,7 @@
             --bg-dark: #1a1a1a;
             --bg-dark02: #2d2d2d;
             --cl-accent01: #00d2ff;
-            --ft-gray: #e8e8e8;
+            --ft-gray: #9e9c9c;
             --container-px: 4rem;
             --container-px-lg: 8rem;
         }
@@ -336,29 +336,7 @@
             margin-bottom: 2rem;
             letter-spacing: -0.05em;
         }
-/* 
-        .skill-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-top: 2rem;
-        }
 
-        .skill-tag {
-            padding: 0.5rem 1.25rem;
-            border-radius: 9999px;
-            border: 1px solid #333;
-            font-size: 0.75rem;
-            color: var(--ft-gray);
-            transition: all 0.3s;
-            cursor: default;
-        }
-
-        .skill-tag:hover {
-            border-color: var(--cl-accent01);
-            color: white;
-        }
- */
         .profile-container {
             position: relative;
             aspect-ratio: 1 / 1;
@@ -506,7 +484,7 @@
             }
         }
 
-        /* Projects */
+        /* PROJECT */
         .project_grid {
             display: grid;
             gap: 2rem;
@@ -576,7 +554,7 @@
         }
 
         .card-text {
-            color: var(--ft-gray);
+            color: #fff;
             font-size: 1.4rem;
             margin-bottom: 1.5rem;
         }
@@ -584,20 +562,11 @@
         .card-verdisc{
             font-size: 1.4rem;
             margin-bottom: 1.5rem;
+            color: var(--ft-gray);
         }
         @media (max-width: 767px) {
             .card-text {font-size: 1.2rem;}
         }
-
-        /* .card-link {
-            text-decoration: none;
-            color: var(--cl-accent01);
-            font-size: 1.8rem;
-        }
-
-        .card-link:hover {
-            text-decoration: underline;
-        } */
 
         .card-link {
             margin-top: 1rem;
@@ -651,20 +620,19 @@
             font-size: 1rem;
             font-weight: 700;
             letter-spacing: 0.1em;
-            color: var(--ft-gray);
+            color: var(--cl-accent01);  
             transform: translateX(-10px);
             transition: all 0.3s ease;
         }
 
-        /* 矢印の「線」の部分 */
         .card::after {
             content: '';
             position: absolute;
-            bottom: 2.8rem; /* 高さ中央合わせ */
+            bottom: 2.8rem;
             right: 2rem;
-            width: 2rem;   /* 線の長さ */
-            height: 1px;   /* 線の太さ */
-            background: var(--ft-gray);
+            width: 2rem;
+            height: 1px;
+            background: var(--cl-accent01);  
             transition: all 0.3s ease;
         }
 
@@ -913,7 +881,7 @@
         </div>
         <div class="nav-links">
             <a href="#about" class="nav-link">ABOUT</a>
-            <a href="#projects" class="nav-link">PROJECTS</a>
+            <a href="#project" class="nav-link">PROJECT</a>
             <a href="#contact" class="nav-link">CONTACT</a>
         </div>
     </nav>
@@ -928,7 +896,7 @@
             <!-- <p class="hero_desc fade-in">
             </p> -->
             <div class="fade-in">
-                <a href="#projects" class="btn_accent">View My Project</a>
+                <a href="#project" class="btn_accent">View My Project</a>
             </div>
         </div>
 
@@ -1011,9 +979,9 @@
             </div>
         </section>
 
-        <!-- Projects セクション -->
-        <section id="projects">
-            <h2 class="sec_title fade-in">PROJECTS</h2>
+        <!-- Project セクション -->
+        <section id="project">
+            <h2 class="sec_title fade-in">PROJECT</h2>
             
             <div class="project_grid">
                 
@@ -1041,10 +1009,9 @@
                             言語：Python<br>
                             フレームワーク：Django 3.2.13
                         </p>
-                        <!-- <a href="#" class="card-link" onclick="event.stopPropagation();">GitHub</a> -->
                     </div>
                     <div class="card-link">
-                        <a href="#" class="github-link">GitHub</a>
+                        <a href="https://github.com/y-maeda78/vegeket-dev" class="github-link">GitHub</a>
                     </div>
                 </div>
 
@@ -1074,10 +1041,9 @@
                             言語：Python<br>
                             フレームワーク：Django 4.0
                         </p>
-                        <!-- <a href="#" class="card-link" onclick="event.stopPropagation();">GitHub</a> -->
                     </div>
                     <div class="card-link">
-                        <a href="#" class="github-link">GitHub</a>
+                        <a href="https://github.com/y-maeda78/NAGOYAMESHI-dev" class="github-link">GitHub</a>
                     </div>
                 </div>
 
@@ -1133,11 +1099,11 @@
         <div class="footer-logo">PORTFOLIO<span class="accent">.</span></div>
         <div class="footer-nav">
             <a href="#about">ABOUT</a>
-            <a href="#projects">PROJECTS</a>
+            <a href="#project">PROJECT</a>
             <a href="#contact">CONTACT</a>
         </div>
         <div class="copyright">
-            Copyright &copy; 2026 PORTFOLIO. All Rights Reserved.
+            &copy; 2026 PORTFOLIO. All Rights Reserved.
         </div>
     </footer>
 
