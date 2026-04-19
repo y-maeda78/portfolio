@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +25,75 @@
             box-sizing: border-box;
         }
 
-        html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+        html,
+        body,
+        div,
+        span,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        abbr,
+        address,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        samp,
+        small,
+        strong,
+        sub,
+        sup,
+        var,
+        b,
+        i,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
             margin: 0;
             padding: 0;
             border: 0 solid rgba(0, 0, 0, 0);
@@ -34,7 +103,7 @@
         }
 
         html {
-            font-size: 62.5%; 
+            font-size: 62.5%;
             -webkit-text-size-adjust: 100%;
             -webkit-tap-highlight-color: transparent;
             word-wrap: break-word;
@@ -52,21 +121,29 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        main{
+        main {
             position: relative;
         }
 
-        img, picture, video, canvas, svg {
+        img,
+        picture,
+        video,
+        canvas,
+        svg {
             display: block;
             max-width: 100%;
             height: auto;
         }
 
-        input, button, textarea, select {
+        input,
+        button,
+        textarea,
+        select {
             font: inherit;
         }
 
-        ul, ol {
+        ul,
+        ol {
             list-style: none;
         }
 
@@ -76,7 +153,9 @@
             -webkit-tap-highlight-color: transparent;
         }
 
-        a:hover, a:active, a:focus {
+        a:hover,
+        a:active,
+        a:focus {
             text-decoration: none;
             color: inherit;
         }
@@ -85,17 +164,28 @@
             a {
                 transition: all 0.3s ease;
             }
+
             a:hover {
                 opacity: 0.6;
             }
         }
 
-        .pc{ display: block;}
-        .sp{ display: none;}
+        .pc {
+            display: block;
+        }
+
+        .sp {
+            display: none;
+        }
 
         @media (max-width: 767px) {
-            .pc{display: none;}
-            .sp{display: block;}
+            .pc {
+                display: none;
+            }
+
+            .sp {
+                display: block;
+            }
         }
 
         /* 共通style */
@@ -113,7 +203,8 @@
                 max-width: 100%;
                 padding: 80px var(--container-px);
             }
-            section.contact{
+
+            section.contact {
                 padding: 80px 0;
             }
         }
@@ -130,7 +221,7 @@
             position: relative;
         }
 
-        .sec_title::after{
+        .sec_title::after {
             content: "";
             position: absolute;
             bottom: -4px;
@@ -140,7 +231,7 @@
             height: 1px;
             background: #898989;
         }
-        
+
         /* ボタン */
         .btn_accent {
             display: inline-block;
@@ -230,6 +321,7 @@
             backdrop-filter: blur(5px);
             transition: all 0.4s ease;
         }
+
         @media (max-width: 500px) {
             nav {
                 flex-wrap: wrap;
@@ -244,6 +336,7 @@
             font-weight: 900;
             letter-spacing: -0.05em;
         }
+
         @media (max-width: 500px) {
             .nav-logo {
                 font-size: 1.6rem;
@@ -295,10 +388,11 @@
             padding-right: var(--container-px-lg);
             transition: all 0.4s ease;
         }
+
         @media (max-width: 767px) {
             .hero {
-            padding-left: 8%;
-            padding-right: 0;
+                padding-left: 8%;
+                padding-right: 0;
             }
         }
 
@@ -316,7 +410,7 @@
             max-width: 600px;
         }
 
-         /* About */
+        /* About */
         .about_grid {
             display: grid;
             gap: 4rem;
@@ -344,6 +438,7 @@
             max-width: 350px;
             margin: 0 auto;
         }
+
         @media (min-width: 768px) {
             .profile-container {
                 width: 80%;
@@ -385,10 +480,8 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            filter: 
-                saturate(80%)
-                brightness(100%)
-                contrast(80%);
+            filter:
+                saturate(80%) brightness(100%) contrast(80%);
             transition: all 0.5s ease;
         }
 
@@ -399,7 +492,7 @@
 
 
         /* skills */
-        .skills_title{
+        .skills_title {
             margin-top: 100px;
         }
 
@@ -412,8 +505,8 @@
 
         }
 
-        .skills_grid > .fade-in {
-            width: calc((100% - var(--container-px)) / 3); 
+        .skills_grid>.fade-in {
+            width: calc((100% - var(--container-px)) / 3);
             max-width: 200px;
         }
 
@@ -421,7 +514,8 @@
             .skills_grid {
                 justify-content: space-between;
             }
-            .skills_grid > .fade-in {
+
+            .skills_grid>.fade-in {
                 width: calc((100% - var(--container-px-lg)) / 5);
             }
         }
@@ -442,8 +536,8 @@
             color: white;
         }
 
-        .skills-item{
-            width:50%;
+        .skills-item {
+            width: 50%;
             height: auto;
             margin-bottom: 1rem;
             display: flex;
@@ -457,7 +551,7 @@
             object-fit: contain;
         }
 
-        .skills_grid .fade-in{
+        .skills_grid .fade-in {
             opacity: 0;
             transform: translateY(30px);
             animation-duration: 0.8s;
@@ -471,11 +565,25 @@
             animation-play-state: running;
         }
 
-        .skills_grid .fade-in:nth-child(1) { animation-delay: 0.2s; }
-        .skills_grid .fade-in:nth-child(2) { animation-delay: 0.4s; }
-        .skills_grid .fade-in:nth-child(3) { animation-delay: 0.6s; }
-        .skills_grid .fade-in:nth-child(4) { animation-delay: 0.8s; }
-        .skills_grid .fade-in:nth-child(5) { animation-delay: 1.0s; }
+        .skills_grid .fade-in:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+
+        .skills_grid .fade-in:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+
+        .skills_grid .fade-in:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        .skills_grid .fade-in:nth-child(4) {
+            animation-delay: 0.8s;
+        }
+
+        .skills_grid .fade-in:nth-child(5) {
+            animation-delay: 1.0s;
+        }
 
         @keyframes fadeInUp {
             to {
@@ -497,7 +605,8 @@
                 gap: 0 6rem;
                 align-items: start;
             }
-            .project_grid > div:nth-child(even) {
+
+            .project_grid>div:nth-child(even) {
                 margin-top: 100px;
             }
         }
@@ -513,9 +622,10 @@
             position: relative;
             cursor: pointer;
         }
+
         @media (min-width: 768px) {
             .card {
-            padding-bottom: 1.6rem;
+                padding-bottom: 1.6rem;
             }
         }
 
@@ -559,13 +669,16 @@
             margin-bottom: 1.5rem;
         }
 
-        .card-verdisc{
+        .card-verdisc {
             font-size: 1.4rem;
             margin-bottom: 1.5rem;
             color: var(--ft-gray);
         }
+
         @media (max-width: 767px) {
-            .card-text {font-size: 1.2rem;}
+            .card-text {
+                font-size: 1.2rem;
+            }
         }
 
         .card-link {
@@ -574,7 +687,7 @@
             z-index: 20;
         }
 
-        .github-link::after{
+        .github-link::after {
             display: inline-block;
             content: "";
             transform: translateY(-1.5px);
@@ -587,7 +700,7 @@
             transition: all 0.4s;
         }
 
-        .github-link:hover::after{
+        .github-link:hover::after {
             border-top: 2px solid #fff;
             border-right: 2px solid #fff;
             opacity: 1;
@@ -604,10 +717,10 @@
             border-radius: 18px;
             background-color: var(--cl-accent01);
         }
-        
+
         @media (max-width: 767px) {
             .github-link {
-                margin-bottom: 2rem; 
+                margin-bottom: 2rem;
                 font-size: 1.4rem;
             }
         }
@@ -627,7 +740,7 @@
             font-size: 1rem;
             font-weight: 700;
             letter-spacing: 0.1em;
-            color: var(--cl-accent01);  
+            color: var(--cl-accent01);
             transform: translateX(-10px);
             transition: all 0.3s ease;
         }
@@ -639,7 +752,7 @@
             right: 2rem;
             width: 2rem;
             height: 1px;
-            background: var(--cl-accent01);  
+            background: var(--cl-accent01);
             transition: all 0.3s ease;
         }
 
@@ -649,8 +762,8 @@
         }
 
         .card:hover::after {
-            width: 3rem; 
-            background: var(--cl-accent01); 
+            width: 3rem;
+            background: var(--cl-accent01);
         }
 
 
@@ -659,7 +772,7 @@
             margin: 0 auto;
         }
 
-        .contact_desc{
+        .contact_desc {
             text-align: center;
         }
 
@@ -693,7 +806,7 @@
             box-shadow: 0 0 10px var(--cl-accent01);
         }
 
-        .email span{
+        .email span {
             display: inline-block;
             width: 100%;
             word-break: break-all;
@@ -702,10 +815,11 @@
             font-weight: 900;
             transition: all 0.4s ease;
         }
+
         @media (max-width: 500px) {
             .email span {
                 font-size: 2rem;
-                
+
             }
         }
 
@@ -724,7 +838,7 @@
             margin-top: 2rem;
         }
 
-        .email-wrapper{
+        .email-wrapper {
             position: relative;
         }
 
@@ -756,7 +870,7 @@
             visibility: visible;
             transform: translateX(-50%) translateY(0);
         }
-        
+
         #copy-paste {
             position: absolute;
             bottom: 0rem;
@@ -805,7 +919,7 @@
             font-size: 1.2rem;
         }
 
-                
+
         .back_to_top {
             position: fixed;
             bottom: 30px;
@@ -826,10 +940,10 @@
             -webkit-backdrop-filter: blur(1px);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 50%;
-            box-shadow: 
-            0 4px 10px 0 rgba(31, 38, 135, 0.15),
-            inset -5px -5px 10px rgba(255, 255, 255, 0.1),
-            inset 5px 5px 10px rgba(0, 0, 0, 0.01);
+            box-shadow:
+                0 4px 10px 0 rgba(31, 38, 135, 0.15),
+                inset -5px -5px 10px rgba(255, 255, 255, 0.1),
+                inset 5px 5px 10px rgba(0, 0, 0, 0.01);
         }
 
         .back_to_top img {
@@ -844,23 +958,26 @@
         }
 
         @media only screen and (min-width: 768px) {
-        .back_to_top {
-            right: 40px;
-            bottom: 40px;
-            width: 60px;
-            height: 60px;
-        }
-        .back_to_top img {
-            width: 80%;
-            height: 80%;
+            .back_to_top {
+                right: 40px;
+                bottom: 40px;
+                width: 60px;
+                height: 60px;
             }
-        .back_to_top:hover {
-            background-color: var(--cl-main-01);
-            border: 1px solid rgba(0, 210, 255, 0.2);
-        }
-        .back_to_top:hover img {
-            filter: brightness(0) saturate(100%) invert(60%) sepia(32%) saturate(3117%) hue-rotate(151deg) brightness(107%) contrast(101%);
-        }
+
+            .back_to_top img {
+                width: 80%;
+                height: 80%;
+            }
+
+            .back_to_top:hover {
+                background-color: var(--cl-main-01);
+                border: 1px solid rgba(0, 210, 255, 0.2);
+            }
+
+            .back_to_top:hover img {
+                filter: brightness(0) saturate(100%) invert(60%) sepia(32%) saturate(3117%) hue-rotate(151deg) brightness(107%) contrast(101%);
+            }
         }
 
         .back_to_top.show {
@@ -868,11 +985,13 @@
             transform: translateX(0);
             visibility: visible;
         }
+
         .back_to_top.show img {
             transform: rotate(0deg);
         }
     </style>
 </head>
+
 <body>
 
     <!-- parallax -->
@@ -915,7 +1034,7 @@
                     <p class="about_desc">
                         前職のシステム運用では「ユーザーの潜在的なニーズを汲み取る」ことに向き合ってきました。<br>
                         現在はフロントエンドの実務に携わり、構築準備から公開までの実装を担っています。デザインを忠実に再現するだけでなく、アニメーションの演出やUI改善の提案を通じて、使いやすさを追求した構築を心がけています。<br>
-                        <br>                        
+                        <br>
                         また、PythonやDjangoを用いたバックエンド開発の学習にも取り組んでおり、さらなるスキルアップのためエンジニアを目指しています。
                     </p>
                 </div>
@@ -929,13 +1048,13 @@
                 </div>
             </div>
 
-        <!-- skills -->
+            <!-- skills -->
             <h2 class="sec_title skills_title fade-in">SKILLS</h2>
 
             <div class="skills_grid">
                 <div class="fade-in">
                     <div class="skills-box">
-                        <div class="skills-item">                            
+                        <div class="skills-item">
                             <img src="image/icon_html5.png" alt="">
                         </div>
                         <p>HTML/CSS</p>
@@ -944,7 +1063,7 @@
 
                 <div class="fade-in">
                     <div class="skills-box">
-                        <div class="skills-item">                        
+                        <div class="skills-item">
                             <img src="image/icon_js.png" alt="">
                         </div>
                         <p>JavaScript</p>
@@ -955,7 +1074,7 @@
                     <div class="skills-box">
 
                         <div class="skills-item">
-                            
+
                             <img src="image/icon_php.png" alt="">
                         </div>
                         <p>PHP</p>
@@ -966,7 +1085,7 @@
                     <div class="skills-box">
 
                         <div class="skills-item">
-                            
+
                             <img src="image/icon_java.png" alt="">
                         </div>
                         <p>Java</p>
@@ -977,7 +1096,7 @@
                     <div class="skills-box">
 
                         <div class="skills-item">
-                            
+
                             <img src="image/icon_Python.png" alt="">
                         </div>
                         <p>Python</p>
@@ -989,9 +1108,9 @@
         <!-- Project セクション -->
         <section id="project">
             <h2 class="sec_title fade-in">PROJECT</h2>
-            
+
             <div class="project_grid">
-                
+
                 <!-- 1 -->
                 <div class="fade-in">
                     <div class="card" onclick="location.href='https://vegeket-app-v1-f32319ce22f2.herokuapp.com/'">
@@ -1056,7 +1175,8 @@
 
                 <!-- 3 -->
                 <div class="fade-in">
-                    <div class="card" onclick="location.href='https://ai-travelplanner-app-v1-fc07674f29c0.herokuapp.com/'">
+                    <div class="card"
+                        onclick="location.href='https://ai-travelplanner-app-v1-fc07674f29c0.herokuapp.com/'">
                         <div class="card-image">
                             <div class="splide image-slider" aria-label="画像スライダー">
                                 <div class="splide__track">
@@ -1073,6 +1193,13 @@
                             OpenAI APIを活用したAI旅行プラン生成アプリケーションです。<br class="pc">
                             「旅行の計画を立てるのが大変」「どこに行けばいいか迷う」という悩みを解決するため、目的地、人数、期間、予算、そして個人のこだわり（「海鮮を食べたい」「歴史を巡りたい」など）を入力するだけで、AIが最適なスケジュールを提案します。
                         </p>
+                        <p class="card-verdisc">
+                            言語：Python<br>
+                            フレームワーク：Flask
+                        </p>
+                    </div>
+                    <div class="card-link">
+                        <a href="https://github.com/y-maeda78/ai-travelplanner-dev" class="github-link">GitHub</a>
                     </div>
                 </div>
 
@@ -1177,7 +1304,7 @@
             textarea.select();
             document.execCommand('copy');
             document.body.removeChild(textarea);
-            
+
             const paste = document.getElementById('copy-paste');
             paste.style.opacity = '1';
             setTimeout(() => {
@@ -1188,20 +1315,20 @@
         // スライダー
         document.addEventListener('DOMContentLoaded', function () {
             const sliders = document.querySelectorAll('.image-slider');
-    
+
             sliders.forEach((slider, index) => {
                 setTimeout(() => {
                     new Splide(slider, {
-                        type        : 'fade',
-                        rewind      : true,
-                        autoplay    : true,
-                        interval    : 4000,
-                        speed       : 2000,
-                        easing      : 'ease-out',
-                        arrows      : false,
-                        pagination  : false,
+                        type: 'fade',
+                        rewind: true,
+                        autoplay: true,
+                        interval: 4000,
+                        speed: 2000,
+                        easing: 'ease-out',
+                        arrows: false,
+                        pagination: false,
                         pauseOnHover: false,
-                        drag        : true,
+                        drag: true,
                     }).mount();
                 }, index * 1500);
             });
@@ -1225,4 +1352,5 @@
         }
     </script>
 </body>
+
 </html>
